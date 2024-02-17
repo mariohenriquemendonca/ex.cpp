@@ -1,1 +1,41 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    
+    int a, b;
+    
+   
+    cout << "Digite o valor de a: ";
+    cin >> a;
+    cout << "Digite o valor de b: ";
+    cin >> b;
+    
+    
+    int soma = a + b;
+    int diferenca = a - b;
+    int produto = a * b;
+    float quociente = (float)a / b; 
+    int resto = a % b;
+    
+    // Exibir os resultados
+    cout << "Soma: " << soma << endl;
+    cout << "Diferença: " << diferenca << endl;
+    cout << "Produto: " << produto << endl;
+    cout << "Quociente: " << quociente << endl;
+    cout << "Resto: " << resto << endl;
+
+    // Constante PI
+    const float PI = 3.14159;
+
+    // Calcular a área de um círculo
+    float raio;
+    cout << "Qual o raio do círculo: ";
+    cin >> raio;
+    float area = PI * raio * raio;
+    cout << "Área do círculo: " << area << endl;
+
+    return 0;
+}
 
