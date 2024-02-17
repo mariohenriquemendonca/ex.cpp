@@ -1,1 +1,69 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   
+    float notas[5];
+
+    // Lendo as notas dos alunos e armazenando-as no array
+    cout << "Informe as notas dos 5 alunos:\n";
+    float somaNotas = 0.0;
+    for (int i = 0; i < 5; ++i) {
+        cout << "Nota do aluno " << i + 1 << ": ";
+        cin >> notas[i];
+        somaNotas += notas[i];
+    }
+
+    // Calculando a média das notas utilizando um loop for
+    float mediaNotas = somaNotas / 5;
+
+    // Mostrar a média das notas
+    cout << "Média das notas: " << mediaNotas << endl;
+
+    // Encontrando a maior nota
+    float maiorNota = notas[0];
+    for (int i = 1; i < 5; ++i) {
+        if (notas[i] > maiorNota) {
+            maiorNota = notas[i];
+        }
+    }
+    cout << "Maior nota: " << maiorNota << endl;
+
+    // Encontrando a menor nota
+    float menorNota = notas[0];
+    for (int i = 1; i < 5; ++i) {
+        if (notas[i] < menorNota) {
+            menorNota = notas[i];
+        }
+    }
+    cout << "Menor nota: " << menorNota << endl;
+
+    // Array de números inteiros
+    int numeros[10];
+
+    // Lendo os valores para os valores do array
+    cout << "Informe 10 números inteiros:\n";
+    for (int i = 0; i < 10; ++i) {
+        cout << "Número " << i + 1 << ": ";
+        cin >> numeros[i];
+    }
+
+    // Encontrando o maior e o menor valor do array
+    int maiorNumero = numeros[0];
+    int menorNumero = numeros[0];
+    for (int i = 1; i < 10; ++i) {
+        if (numeros[i] > maiorNumero) {
+            maiorNumero = numeros[i];
+        }
+        if (numeros[i] < menorNumero) {
+            menorNumero = numeros[i];
+        }
+    }
+
+    //Mostrar o maior e o menor valor 
+    cout << "Maior Valor: " << maiorNumero << endl;
+    cout << "Menor Valor: " << menorNumero << endl;
+
+    return 0;
+}
 
