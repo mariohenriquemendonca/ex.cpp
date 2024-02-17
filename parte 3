@@ -1,1 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int n;
+    
+    // Solicitar ao usuário um número inteiro
+    cout << "Digite um número inteiro para calcular a tabuada: ";
+    cin >> n;
+
+    // Calcular e mostrar a tabuada usando um loop for
+    cout << "Tabuada de " << n << ":\n";
+    for (int i = 1; i <= 10; ++i) {
+        cout << n << " x " << i << " = " << (n * i) << endl;
+    }
+
+    return 0;
+}
 
