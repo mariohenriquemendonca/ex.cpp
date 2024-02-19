@@ -8,7 +8,7 @@ int main() {
     // Lendo as notas dos alunos e armazenando-as no array
     cout << "Informe as notas dos 5 alunos:\n";
     float somaNotas = 0.0;
-    for (int i = 0; i < 5; ++i) {
+    for (int i = 0; i < 5; i++) {
         cout << "Nota do aluno " << i + 1 << ": ";
         cin >> notas[i];
         somaNotas += notas[i];
